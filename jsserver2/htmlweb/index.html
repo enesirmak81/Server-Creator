@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes IRMAK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        var serverName = "Server1";
+console.log(serverName);
+
+let enesserver;
+console.log(enesserver); 
+enesserver = "oc";
+console.log(enesserver)
+
+
+let fullname = "Enes Irmak"
+//let değişkenlerin değeri değiştirilebilir!
+fullname = "Lorem ipsumdolor"
+console.log(fullname)
+
+
+const serverPass = "es.i3452"
+console.log("server pass : " + serverPass)
+
+let enesIrmak = "Merhaba Dünya!"
+console.log(enesIrmak)
+const ENESIRMAK = "Merhaba Dünya!"
+console.log(ENESIRMAK)
+let türkçeBilgi = "Türkçe Bilgi Yazdırılıyor..." // doğru kullanım değil
+
+console.log(türkçeBilgi)
+
+
+let fiyat = 1000
+let kdv = 0.18
+let kdvfiyat = fiyat * kdv
+let toplam = fiyat + kdvfiyat
+
+console.log(
+    "fiyat : ", fiyat,"\n",
+    "kdv oranı : ", kdv,"\n",
+    "kdv tutarı : ", kdvfiyat,"\n",
+    "toplam tutar : ", toplam
+)
+
+let counter = 1
+counter += 2
+console.log(counter)
+
+function islemyap() {
+    var sayi1 = parseInt(prompt("sayi 1 girin: "))
+    var sayi2 = parseInt(prompt("sayi 2 girin: "))
+
+    var sonuc = sayi1 + sayi2
+alert(sonuc)
+}
+
+
+let osmankilli;
+let newosmankilli = Boolean(osmankilli)
+console.log(newosmankilli)
+
+
+let enes = "11"
+console.log(
+    "enes: ",
+    typeof(enes)
+);
+
+
+let username = "enesirmak81"
+const domain = "enesirmak.rf.gd"
+
+let email = username + "@" + domain
+console.log("Merhaba", username, "Sitemize Hoş Geldin!", "\n",
+     "mail adresin: ", email);
+
+console.log(document.location);
+document.body.style.background="aqua"
+
+let title = document.getElementById('app')
+console.log(title.innerHTML);
+
+let linksikis = document.querySelector('ul.ull>li>a')
+linksikis.style.color = "red"
+linksikis.classList.add("iman")
+console.log(linksikis.innerHTML="link yok boka basın");
+
+function yarrakolcum(){
+    let fullName = prompt("Lütfen ekran uzunluğunu gir (cm): ")
+    let cevap = "Girilen değer: " + fullName + "cm"
+    let kck = "Yani !KÜÇÜK!"
+    let byk = "Maç izlenir"
+    alert(cevap)
+    if(fullName > 20)
+        alert(byk)
+    else
+        alert(kck)
+}
+    </script>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Önyükleme"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ev</font></font></a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Özellikler</font></font></a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fiyatlandırma</font></font></a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSS</font></font></a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hakkında</font></font></a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Aramak..." aria-label="Aramak">
+            </form>
+    
+            <div class="text-end">
+              <button onclick="islemyap()" type="button" class="btn btn-outline-light me-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Giriş yapmak</font></font></button>
+              <button type="button" class="btn btn-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Üye olmak</font></font></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <h2 id="app">Lorem ipsum dolor sit amet.</h2>
+
+      <ul class="ull">
+        <li>
+          <a href="#">
+            linke tıkla
+          </a>
+        </li>
+      </ul>
+      <ul class="ull">
+        <li>
+          <a onclick="yarrakolcum()" href="#">
+            bok
+          </a>
+        </li>
+      </ul>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
